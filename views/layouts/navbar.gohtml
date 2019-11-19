@@ -1,0 +1,37 @@
+{{define "navbar"}}
+    <nav>
+        <div class="nav-wrapper cyan lighten-1">
+            <a href="#" class="brand-logo center">GoHub</a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-med-and-down"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="/">Overview</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/sites">Sites</a></li>
+                <li><a href="/tutorials">Tutorials</a></li>
+                <li><a href="/media">Media</a></li>
+                <li><a href="/jobs">Jobs</a></li>
+                <li><a href="/merchandise">Merchandise</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <ul id="slide-out" class="sidenav">
+        {{/* <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="assets/images/gopher.png">
+                </div>
+            </div>
+        </li> */}}
+        <h4 class="center cyan-text text-lighten-1">GoHub</h4>
+        <li><div class="divider"></div></li><br>
+        <li><a href="/" class="waves-effect">Overview</a></li>
+        <li><a href="/news" class="waves-effect">News</a></li>
+        <li><a href="/sites" class="waves-effect">Sites</a></li>
+        <li><a href="/tutorials" class="waves-effect">Tutorials</a></li>
+        <li><a href="/media" class="waves-effect">Media</a></li>
+        <li><a href="/jobs" class="waves-effect">Jobs</a></li>
+        <li><a href="/merchandise" class="waves-effect">Merchandise</a></li>        
+    </ul>
+    
+{{end}}
