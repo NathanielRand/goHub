@@ -1,0 +1,21 @@
+Instructions for GoHub Web Application
+
+- How to run web application locally
+1. Navigate to the root directory
+2. "go run main.go" or "fresh" (*If installed & runner.conf configured)
+3. Navigate to localhost on web browser: http://localhost:8080/
+
+- How to commit changes to version control (github.com/NathanielRand/oneware)
+1. git status
+2. git add .
+3. git commit -m "Commit message goes here"
+4. git push
+
+- (COMING SOON) How to deploy web application to Google Cloud Platform
+1. Commit changes to Github and GCloud
+2. Update Docker image
+3. Deploy Command to GCP: "gcloud app deploy"
+4. Errors: reference https://cloud.google.com/sdk/docs/quickstart-macos
+
+
+*Install "Fresh" here: https://github.com/gravityblast/fresh

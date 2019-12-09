@@ -1,21 +1,21 @@
 {{define "navbar"}}
     <nav>
         <div class="nav-wrapper cyan lighten-1">
-            <a href="#" class="brand-logo center">GoHub</a>
+            <a href="/" class="brand-logo center">GoHub</a>
             <a href="#" data-target="slide-out" class="sidenav-trigger show-on-med-and-down"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="/">Overview</a></li>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">                                
                 <li><a href="/news">News</a></li>
                 <li><a href="/sites">Sites</a></li>
-                <li><a href="/tutorials">Tutorials</a></li>
+                <li><a href="/courses">Courses</a></li>
                 <li><a href="/media">Media</a></li>
                 <li><a href="/jobs">Jobs</a></li>
                 <li><a href="/merchandise">Merchandise</a></li>
+                <li><a href="/groups">Groups</a></li>
             </ul>
         </div>
     </nav>
     
-    <ul id="slide-out" class="sidenav">
+    <ul id="slide-out" class="sidenav cyan lighten-5">
         {{/* <li>
             <div class="user-view">
                 <div class="background">
@@ -23,15 +23,20 @@
                 </div>
             </div>
         </li> */}}
-        <h4 class="center cyan-text text-lighten-1">GoHub</h4>
+        <h3 class="center cyan-text text-lighten-1"><a id="side-nav-header-link" href="/">GoHub</a></h3>
         <li><div class="divider"></div></li><br>
-        <li><a href="/" class="waves-effect">Overview</a></li>
-        <li><a href="/news" class="waves-effect">News</a></li>
-        <li><a href="/sites" class="waves-effect">Sites</a></li>
-        <li><a href="/tutorials" class="waves-effect">Tutorials</a></li>
-        <li><a href="/media" class="waves-effect">Media</a></li>
-        <li><a href="/jobs" class="waves-effect">Jobs</a></li>
-        <li><a href="/merchandise" class="waves-effect">Merchandise</a></li>        
+        <div class="center">
+            <a href="https://www.paypal.me/onewareio" target="_blank" class="waves-effect waves-light btn btn-large cyan lighten-2">DONATE</a>            
+        </div>
+        <br><li><div class="divider"></div></li><br>
+        <li><a href="/" id="side-nav-links" class="waves-effect">HOME</a></li>
+        <li><a href="/news" id="side-nav-links" class="waves-effect">NEWS</a></li>
+        <li><a href="/sites" id="side-nav-links" class="waves-effect">SITES</a></li>
+        <li><a href="/courses" id="side-nav-links" class="waves-effect">COURSES</a></li>
+        <li><a href="/media" id="side-nav-links" class="waves-effect">MEDIA</a></li>
+        <li><a href="/jobs" id="side-nav-links" class="waves-effect">JOBS</a></li>
+        <li><a href="/merchandise" id="side-nav-links" class="waves-effect">MERCHANDISE</a></li>        
+        <li><a href="/groups" id="side-nav-links" class="waves-effect">GROUPS</a></li>        
     </ul>
     
 {{end}}

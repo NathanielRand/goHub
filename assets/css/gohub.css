@@ -2,6 +2,16 @@ body {
     background: #e0f7fa;
 }
 
+h1, h2, h3, h4, h5, h6, a, p, li {
+    font-family: 'Comfortaa', cursive;  
+    font-weight: normal;
+}
+
+h1 {
+    color: #00bcd4;
+    text-align: center;
+}
+
 .card {
     border-radius: 11px 24px;
 }
@@ -10,7 +20,20 @@ body {
     border-radius: 11px 24px;
 }
 
-h1, h2, h3, h4, h5, h6, a, p {
-    font-family: 'Comfortaa', cursive;  
-    font-weight: normal;
+.btn {
+    border-radius: 10px 25px;
+}
+
+#icon-home {    
+    width: 75px;
+}
+
+#side-nav-header-link {
+    color: #00acc1;
+}
+
+#side-nav-links {
+    color: #00acc1;
+    font-size: 150%;
+    margin-top: 6%;
 }
