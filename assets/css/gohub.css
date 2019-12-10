@@ -12,6 +12,10 @@ h1 {
     text-align: center;
 }
 
+/* a {
+  font-size: 32px;
+} */
+
 .card {
     border-radius: 15px 45px;
 }
