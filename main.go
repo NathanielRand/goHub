@@ -17,7 +17,7 @@ var (
 	mediaView *views.View
 	jobsView *views.View
 	merchandiseView *views.View
-	groupsView *views.View
+	eventsView *views.View
 	faqView *views.View
 	contactView *views.View
 	aboutView *views.View
@@ -80,9 +80,9 @@ func merchandise(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func groups(w http.ResponseWriter, r *http.Request) {
+func events(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-	err := groupsView.Template.ExecuteTemplate(w, groupsView.Layout, nil)
+	err := eventsView.Template.ExecuteTemplate(w, eventsView.Layout, nil)
 	if err != nil {
 		fmt.Printf("Error executing contactView template: %v\n", err)
 	}
@@ -129,7 +129,7 @@ func main() {
 	mediaView = views.NewView("materialize", "views/media.gohtml")
 	jobsView = views.NewView("materialize", "views/jobs.gohtml")
 	merchandiseView = views.NewView("materialize", "views/merchandise.gohtml")
-	groupsView = views.NewView("materialize", "views/groups.gohtml")
+	eventsView = views.NewView("materialize", "views/events.gohtml")
 	aboutView = views.NewView("materialize", "views/about.gohtml")
 	contactView = views.NewView("materialize", "views/contact.gohtml")
 	feedbackView = views.NewView("materialize", "views/feedback.gohtml")
@@ -151,7 +151,7 @@ func main() {
 	r.HandleFunc("/media", media)
 	r.HandleFunc("/jobs", jobs)
 	r.HandleFunc("/merchandise", merchandise)
-	r.HandleFunc("/groups", groups)
+	r.HandleFunc("/events", events)
 	r.HandleFunc("/about", about)
 	r.HandleFunc("/contact", contact)
 	r.HandleFunc("/feedback", feedback)
